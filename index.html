@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Столешницы</title>
+    <meta name="description" content="Столешницы" />
+    <meta name="keywords" content="Столешницы" />
+
+    <link rel="shortcut icon" href="/images/settings_3.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="/css/style.css?v=1686027348" />
+    <link rel="stylesheet" href="/css/tabletop.css" />
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="page " id="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__container">
+                    <a href="/" class="header__logo">
+                        <img src="/images/logo.svg" alt="Фабрика столешниц Антарес" class="logo__media">
+                    </a>
+                    <div class="header__contacts">
+                        <a class="header__contacts-item" href="/kontakty">
+                            <div class="header__contacts-icon">
+                                <svg class="svg-icon">
+                                    <use xlink:href="#icon-location" />
+                                </svg>
+                            </div>
+                            <div class="header__contacts-text">
+                                Свердловская обл., г. Берёзовский, ул. Кирова 63, офис 301 </div>
+                        </a>
+                        <a class="header__contacts-item" href="mailto:ooo.plastek@mail.ru">
+                            <div class="header__contacts-icon">
+                                <svg class="svg-icon">
+                                    <use xlink:href="#icon-mail" />
+                                </svg>
+                            </div>
+                            <div class="header__contacts-text">
+                                ooo.plastek@mail.ru </div>
+                        </a>
+                        <div class="header__phones" style="position: relative;top: -8px;">
+                            <a class="header__contacts-item" href="tel:+73433858140">
+                                <div class="header__contacts-icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="#icon-phone" />
+                                    </svg>
+                                </div>
+                                <div class="header__contacts-text header__contacts-text_larger">
+                                    <span class="text-nowrap">+7 (343) 385-81-40</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__callback">
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#callbackModal">
+                            <span>Заказать звонок</span>
+                            <svg class="svg-icon">
+                                <use xlink:href="#icon-phone" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header__menu-icon">
+                        <span class="navbar-toggle">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__sticky">
+                <div class="container">
+                    <div class="header__sticky-container">
+                        <a href="/" class="header__sticky-logo">
+                            <img src="/images/logo.svg" alt="Фабрика столешниц Антарес" class="logo__media">
+                        </a>
+                        <nav class="header__menu">
+                            <ul class="main-menu">
+                                <li class="main-menu__item  has-submenu">
+                                    <div class="hidden-xs">
+                                        <a href="/o_kompanii" class="main-menu__link main-menu__link_level-1 ">
+                                            <span>О нас</span>
+                                            <svg width="10" height="5">
+                                                <use xlink:href="#icon-caret-menu" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="visible-xs">
+                                        <button class="main-menu__link main-menu__link_level-1 panel-title"
+                                            data-toggle="collapse" data-target="#headerMenuAbout" aria-expanded="false">
+                                            <span>О нас</span>
+                                            <svg width="10" height="5" class="panel-caret">
+                                                <use xlink:href="#icon-caret-menu" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="main-menu__submenu collapse" id="headerMenuAbout">
+                                        <div><a href="/o_kompanii" class="main-menu__link main-menu__link_level-2 ">О
+                                                компании</a></div>
+                                        <div><a href="/news"
+                                                class="main-menu__link main-menu__link_level-2 ">Новости</a></div>
+                                        <div><a href="/poleznaya_informaciya"
+                                                class="main-menu__link main-menu__link_level-2 ">Полезная информация</a>
+                                        </div>
+                                        <div><a href="/kontakty"
+                                                class="main-menu__link main-menu__link_level-2 ">Контакты</a></div>
+                                        <div><a href="/sertifikaty"
+                                                class="main-menu__link main-menu__link_level-2 ">Сертификаты</a></div>
+                                        <div><a href="/stat_partnerom"
+                                                class="main-menu__link main-menu__link_level-2 ">Наши дилеры</a></div>
+                                    </div>
+                                </li>
+                                <li class="main-menu__item  has-submenu">
+                                    <div class="hidden-xs">
+                                        <a href="/catalog" class="main-menu__link main-menu__link_level-1 ">
+                                            <span>Продукция</span>
+                                            <svg width="10" height="5">
+                                                <use xlink:href="#icon-caret-menu" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="visible-xs">
+                                        <button class="main-menu__link main-menu__link_level-1 panel-title"
+                                            data-toggle="collapse" data-target="#headerMenuCatalog"
+                                            aria-expanded="false">
+                                            <span>Продукция</span>
+                                            <svg width="10" height="5" class="panel-caret">
+                                                <use xlink:href="#icon-caret-menu" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="main-menu__submenu collapse" id="headerMenuCatalog">
+                                        <div><a href="/stoleshnicy"
+                                                class="main-menu__link main-menu__link_level-2 active">Столешницы</a>
+                                        </div>
+                                        <div><a href="/stenovye_paneli"
+                                                class="main-menu__link main-menu__link_level-2 ">Стеновые панели</a>
+                                        </div>
+                                        <div><a href="/kromochnyj_material"
+                                                class="main-menu__link main-menu__link_level-2 ">Кромочный материал</a>
+                                        </div>
+                                        <div><a href="/furnitura"
+                                                class="main-menu__link main-menu__link_level-2 ">Фурнитура</a></div>
+                                        <div><a href="/fasady"
+                                                class="main-menu__link main-menu__link_level-2 ">Фасады</a></div>
+                                        <div><a href="/hpl-stoleshnicy"
+                                                class="main-menu__link main-menu__link_level-2 ">HPL-столешницы</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-menu__item ">
+                                    <a href="/dekor"
+                                        class="main-menu__link main-menu__link_level-1"><span>Декоры</span></a>
+                                </li>
+                                <li class="main-menu__item  has-submenu">
+                                    <div class="hidden-xs">
+                                        <a href="/uslugi" class="main-menu__link main-menu__link_level-1 ">
+                                            <span>Услуги</span>
+                                            <svg width="10" height="5">
+                                                <use xlink:href="#icon-caret-menu" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="visible-xs">
+                                        <button class="main-menu__link main-menu__link_level-1 panel-title"
+                                            data-toggle="collapse" data-target="#headerMenuServices"
+                                            aria-expanded="false">
+                                            <span>Услуги</span>
+                                            <svg width="10" height="5" class="panel-caret">
+                                                <use xlink:href="#icon-caret-menu" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="main-menu__submenu collapse" id="headerMenuServices">
+                                        <div><a href="/cex_raspila_i_kromleniya"
+                                                class="main-menu__link main-menu__link_level-2 ">Цех распила и
+                                                кромления</a></div>
+                                        <div><a href="/dostavka"
+                                                class="main-menu__link main-menu__link_level-2 ">Доставка</a></div>
+                                        <div><a href="/samovyvoz"
+                                                class="main-menu__link main-menu__link_level-2 ">Самовывоз</a></div>
+                                        <div><a href="/upakovka"
+                                                class="main-menu__link main-menu__link_level-2 ">Упаковка</a></div>
+                                    </div>
+                                </li>
+                                <li class="main-menu__item ">
+                                    <a href="/akcii"
+                                        class="main-menu__link main-menu__link_level-1"><span>Акции</span></a>
+                                </li>
+                                <li class="main-menu__item ">
+                                    <a href="/kontakty"
+                                        class="main-menu__link main-menu__link_level-1"><span>Контакты</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__sticky-phones">
+                            <a class="header__contacts-item" href="tel:+73433858140">
+                                <div class="header__contacts-icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="#icon-phone" />
+                                    </svg>
+                                </div>
+                                <div class="header__contacts-text header__contacts-text_larger">
+                                    <span class="text-nowrap">+7 (343) 385-81-40</span>
+                                </div>
+                            </a>
+                            <div class="header__contacts-item">
+                                <div class="header__contacts-icon">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="#icon-wa" />
+                                    </svg>
+                                </div>
+                                <div class="header__contacts-text header__contacts-text_larger">
+                                    <a href="tel:+79222067487" class="text-nowrap">+7 (922) 206-74-87</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__search">
+                            <form action="/search" class="search-form" method='post'>
+                                <input type="text" placeholder="Введите Ваш запрос" class="search-form__input"
+                                    name='search' required>
+                                <button type="button" class="search-form__btn">
+                                    <svg class="svg-icon">
+                                        <use xlink:href="#icon-search" />
+                                    </svg>
+                                </button>
+                            </form>
+                            <button type="button" class="header__search-show" style="display: none;">
+                                <svg class="svg-icon">
+                                    <use xlink:href="#icon-search" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="visible-xs">
+                            <div class="header__contacts">
+                                <a class="header__contacts-item" href="/kontakty">
+                                    <div class="header__contacts-icon">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="#icon-location" />
+                                        </svg>
+                                    </div>
+                                    <div class="header__contacts-text">
+                                        Свердловская обл., г. Берёзовский, ул. Кирова 63, офис 301 </div>
+                                </a>
+                                <a class="header__contacts-item" href="mailto:ooo.plastek@mail.ru">
+                                    <div class="header__contacts-icon">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="#icon-mail" />
+                                        </svg>
+                                    </div>
+                                    <div class="header__contacts-text">
+                                        ooo.plastek@mail.ru </div>
+                                </a>
+                                <div class="header__phones">
+                                    <a class="header__contacts-item" href="tel:+73433858140">
+                                        <div class="header__contacts-icon">
+                                            <svg class="svg-icon">
+                                                <use xlink:href="#icon-phone" />
+                                            </svg>
+                                        </div>
+                                        <div class="header__contacts-text header__contacts-text_larger">
+                                            <span class="text-nowrap">+7 (343) 385-81-40</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#callbackModal">
+                                    <span>Заказать звонок</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page__main">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="/">Главная</a>
+                    <svg class="svg-icon breadcrumbs__separator">
+                        <use xlink:href="#icon-caret-right" />
+                    </svg> <a href="/catalog">Продукция</a>
+                    <svg class="svg-icon breadcrumbs__separator">
+                        <use xlink:href="#icon-caret-right" />
+                    </svg> <span>Столешницы</span>
+                </div>
+                <h1 class="page__title">Столешницы</h1>
+            </div>
+            <div class="page__content">
+                <div class="container">
+                    <div class="hero">
+                        <div class="hero__content">
+                            <p class="hero__text">Столешницы «Антарес» — это кухонные столешницы высокого качества на основе ДСП (26мм и 38мм) и МДФ (19мм), с покрытием из декоративно бумажно-слоистого пластика (ДБСП) <b>от ведущих российских производителей Slotex, Sloplast, Arkobaleno.</b></p>
+                            <p class="hero__text"> Многообразие декоров позволяет подобрать столешницу под любое дизайнерское решение. В зависимости от декора столешница может иметь тиснение, что делает поверхность похожей на натуральный материал: дерево или камень.</p>
+                            <a href="#" class="hero__btn btn btn-primary">
+                                <span>Перейти к декорам</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits">
+                    <div class="container">
+                        <h2>Преимущества столешниц Антарес</h2>
+                        <div class="benefits__content">
+                            <div class="benefits__item">
+                                <div class="benefits__img">
+                                    <img src="/images/tabletop-icon-ben-1.svg" alt="icon 1">
+                                </div>
+                                <p>Устойчивость к механическим повреждениям</p>
+                            </div>
+
+                            <div class="benefits__item">
+                                <div class="benefits__img">
+                                    <img src="/images/tabletop-icon-ben-2.svg" alt="icon 2">
+                                </div>
+                                <p>Устойчивость к бытовой химии</p>
+                            </div>
+
+                            <div class="benefits__item">
+                                <div class="benefits__img">
+                                    <img src="/images/tabletop-icon-ben-3.svg" alt="icon 3">
+                                </div>
+                                <p>Устойчивость к высоким температурам до 130°C</p>
+                            </div>
+
+                            <div class="benefits__item">
+                                <div class="benefits__img">
+                                    <img src="/images/tabletop-icon-ben-4.svg" alt="icon 4">
+                                </div>
+                                <p>Устойчивость к УФ-лучам</p>
+                            </div>
+
+                            <div class="benefits__item">
+                                <div class="benefits__img">
+                                    <img src="/images/tabletop-icon-ben-5.svg" alt="icon 5">
+                                </div>
+                                <p>Длительный срок службы</p>
+                            </div>
+
+                            <div class="benefits__item">
+                                <div class="benefits__img">
+                                    <img src="/images/tabletop-icon-ben-6.svg" alt="icon 6">
+                                </div>
+                                <p>Широкий ассортимент декоров для любого интерьера</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+
+                    <div class="feature">
+                        <h2>Размеры и характеристики</h2>
+                        <div class="feature__info">
+                            <div class="feature__info-text">
+                                <p>Современный дизайн интерьера уходит в минимализм, где отдаются предпочтения натуральным оттенкам, простым формам и легкости в деталях. Использование тонкой столешницы на кухне создаст эффект легкости и невесомости, при этом кухня будет смотреться стильно и лаконично.</p>
+                                <p>Столешницы 19мм – это столешницы на МДФ основе 18мм без постформинга (без завала), с кромлением по переднему торцу кромкой ABC на полиуритановом клее.</p>
+                            </div>
+                            <div class="feature__info-img">
+                                <img src="/images/tabletop-feature-img.png" alt="feature img">
+                            </div>
+                        </div>
+                        <div class="feature__sizes">
+                            <div class="feature__tabs">
+                                <a class="feature__tab is-active" data-tab-index="0">столешницы 26 мм</a>
+                                <a class="feature__tab" data-tab-index="1">столешницы 38 мм</a>
+                                <a class="feature__tab" data-tab-index="2">столешницы 19 мм</a>
+                            </div>
+    
+                            <div class="feature__content">
+                                <div class="feature__img">
+                                    <img class="toggle-content is-visible" src="/images/tabletop-sizes-img-1.png" alt="tabletop 1" data-tab-index="0">
+                                    <img class="toggle-content" src="/images/tabletop-sizes-img-2.png" alt="tabletop 2" data-tab-index="1">
+                                    <img class="toggle-content" src="/images/tabletop-sizes-img-3.png" alt="tabletop 3" data-tab-index="2">
+                                </div>
+    
+                                <div class="feature__description">
+                                    <div class="feature__standard">
+                                        <div class="feature__header is-open">
+                                            <h3>Стандартные столешницы</h3>
+                                            <img src="/images/arrow-icon.svg" alt="icon arrow">
+                                        </div>
+    
+                                        <div class="feature__wrapper" style="display: block;">
+                                            <div class="feature__table-box toggle-content is-visible" data-tab-index="0">
+                                                <table class="feature__table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Типоразмеры</td>
+                                                            <td>3050×600х26</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Основа</td>
+                                                            <td>ДСП 25 мм</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Торец</td>
+                                                            <td>Постформинг, R=8</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Обратная сторона</td>
+                                                            <td>Крафт-бумага</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Декоры</td>
+                                                            <td>Все декоры</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+        
+                                            <div class="feature__table-box toggle-content" data-tab-index="1">
+                                                <table class="feature__table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Типоразмеры</td>
+                                                            <td>3050×600х38</td>
+                                                            <td>4200×600х38</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Основа</td>
+                                                            <td colspan="2">влагостойкая ДСП 38 мм</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Торец</td>
+                                                            <td colspan="2">Постформинг, R=8</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Обратная сторона</td>
+                                                            <td colspan="2">Крафт-бумага</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Декоры</td>
+                                                            <td>Все декоры</td>
+                                                            <td>50+ декоров</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+        
+                                            <div class="feature__table-box toggle-content" data-tab-index="2">
+                                                <table class="feature__table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Типоразмеры</td>
+                                                            <td>2800×600х19</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Основа</td>
+                                                            <td>МДФ 18 мм</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Торец</td>
+                                                            <td>Без завала</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Обратная сторона</td>
+                                                            <td>Белый пластик</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Декоры</td>
+                                                            <td>Все декоры*</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>*ограничение только в кромке АВS в цвет декора</p>
+                                            </div>
+        
+                                            <a href="#" class="feature__btn btn btn-primary">
+                                                <span>Перейти к декорам</span> 
+                                            </a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="feature__unstandard">
+                                        <div class="feature__header">
+                                            <h3>Нестандартные столешницы</h3>
+                                            <img src="/images/arrow-icon.svg" alt="icon arrow">
+                                        </div>
+    
+                                        <div class="feature__wrapper" style="display: none;">
+                                            <ul class="feature__table-box feature__list toggle-content is-visible" data-tab-index="0">
+                                                <li class="feature__list-item">
+                                                    <p>Глубокие столешницы (столешницы для островов)</p>
+                                                    <div class="feature__list-box">
+                                                        <p>Без завала</p>
+                                                        <p><span>Глубина</span><span>608-1220 мм</span></p> 
+                                                        <p><span>Шаг</span><span>100 мм</span></p> 
+                                                    </div>
+                                                </li>
+                                                <li class="feature__list-item"><p>Столешницы для барных стоек — пластик с 2-х сторон</p></li>
+                                                <li class="feature__list-item"><p>Еврозапил — как вариант соединения при угловой кухне</p></li>
+                                            </ul>
+
+                                            <ul class="feature__table-box feature__list toggle-content" data-tab-index="1">
+                                                <li class="feature__list-item">
+                                                    <p>Глубокие столешницы (столешницы для островов)</p>
+                                                    <div class="feature__list-box">
+                                                        <p>Без завала</p>
+                                                        <p><span>Глубина</span><span>608-1220 мм</span></p> 
+                                                        <p><span>Шаг</span><span>100 мм</span></p> 
+                                                    </div>
+                                                </li>
+                                                <li class="feature__list-item"><p>Столешницы для барных стоек — пластик с 2-х сторон</p></li>
+                                                <li class="feature__list-item"><p>Еврозапил — как вариант соединения при угловой кухне</p></li>
+                                            </ul>
+
+                                            <ul class="feature__table-box feature__list toggle-content" data-tab-index="2">
+                                                <li class="feature__list-item">
+                                                    <p>Глубокие столешницы (столешницы для островов)</p>
+                                                    <div class="feature__list-box">
+                                                        <p>Без завала</p>
+                                                        <p><span>Глубина</span><span>608-1220 мм</span></p> 
+                                                        <p><span>Шаг</span><span>100 мм</span></p> 
+                                                    </div>
+                                                </li>
+                                                <li class="feature__list-item"><p>Столешницы для барных стоек — пластик с 2-х сторон</p></li>
+                                                <li class="feature__list-item"><p>Еврозапил — как вариант соединения при угловой кухне</p></li>
+                                            </ul>
+        
+                                            <a href="#" class="feature__btn btn btn-primary">
+                                                <span>Перейти к декорам</span> 
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="feedback">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-offset-1">
+                        <div class="feedback__subtitle subtitle">
+                            Остались вопросы?
+                        </div>
+                        <div class="feedback__title h1">
+                            Напишите нам
+                        </div>
+                        <div class="feedback__text">
+                            Заполните форму обратной связи и наш менеджер свяжется с Вами в ближайшее время. </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="feedback__form">
+                            <form action="" class='ajax'>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ваше имя*" required
+                                        name='name'>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control phone" placeholder="+7 (___) ___ - __ - __ *"
+                                        required name='phone'>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="E-mail" name='email'>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Введите Ваш вопрос *" required
+                                        name='text'></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-block" type='submit'>
+                                        <span>Задать вопрос</span>
+                                    </button>
+                                </div>
+                                <div class="form-agreement">
+                                    <p>
+                                        Нажимая на кнопку «Задать вопрос», Вы даете согласие на
+                                        <a href="/politic" target='_blank'>обработку персональных данных</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-9">
+                            <div class="footer__menu">
+                                <div class="footer__menu-column">
+                                    <div class="footer__item">
+                                        <div class="footer__title">
+                                            <div class="hidden-xs">
+                                                <a href="/o_kompanii">О Компании</a>
+                                            </div>
+                                            <div class="visible-xs">
+                                                <button class="panel-title" data-toggle="collapse"
+                                                    data-target="#footerMenuAbout" aria-expanded="false">
+                                                    <span>О Компании</span>
+                                                    <svg class="panel-caret" width="16" height="16">
+                                                        <use xlink:href="#icon-caret-down" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <ul class="footer__submenu collapse" id="footerMenuAbout">
+                                            <li><a href="/o_kompanii" class="">О компании</a></li>
+                                            <li><a href="/news" class="">Новости</a></li>
+                                            <li><a href="/poleznaya_informaciya" class="">Полезная информация</a></li>
+                                            <li><a href="/kontakty" class="">Контакты</a></li>
+                                            <li><a href="/sertifikaty" class="">Сертификаты</a></li>
+                                            <li><a href="/stat_partnerom" class="">Стать партнером</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer__menu-column">
+                                    <div class="footer__item">
+                                        <div class="footer__title">
+                                            <div class="hidden-xs">
+                                                <a href="/catalog">Продукция</a>
+                                            </div>
+                                            <div class="visible-xs">
+                                                <button class="panel-title" data-toggle="collapse"
+                                                    data-target="#footerMenuProducts" aria-expanded="false">
+                                                    <span>Продукция</span>
+                                                    <svg class="panel-caret" width="16" height="16">
+                                                        <use xlink:href="#icon-caret-down" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <ul class="footer__submenu collapse" id="footerMenuProducts">
+                                            <li><a href="/stoleshnicy" class="active">Столешницы</a></li>
+                                            <li><a href="/stenovye_paneli" class="">Стеновые панели</a></li>
+                                            <li><a href="/kromochnyj_material" class="">Кромочный материал</a></li>
+                                            <li><a href="/furnitura" class="">Фурнитура</a></li>
+                                            <li><a href="/fasady" class="">Фасады</a></li>
+                                            <li><a href="/hpl-stoleshnicy" class="">HPL-столешницы</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer__menu-column">
+                                    <div class="footer__item">
+                                        <div class="footer__title">
+                                            <div class="hidden-xs">
+                                                <a href="/uslugi">Услуги</a>
+                                            </div>
+                                            <div class="visible-xs">
+                                                <button class="panel-title" data-toggle="collapse"
+                                                    data-target="#footerMenuServices" aria-expanded="false">
+                                                    <span>Услуги</span>
+                                                    <svg class="panel-caret" width="16" height="16">
+                                                        <use xlink:href="#icon-caret-down" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <ul class="footer__submenu collapse" id="footerMenuServices">
+                                            <li><a href="/cex_raspila_i_kromleniya" class="">Цех распила и кромления</a>
+                                            </li>
+                                            <li><a href="/dostavka" class="">Доставка</a></li>
+                                            <li><a href="/samovyvoz" class="">Самовывоз</a></li>
+                                            <li><a href="/upakovka" class="">Упаковка</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer__menu-column">
+                                    <div class="footer__item">
+
+                                        <div class="footer__item">
+                                            <div class="footer__title"><a href="/dekor">Декоры</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="footer__item">
+
+                                        <div class="footer__item">
+                                            <div class="footer__title"><a href="/akcii">Акции</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="footer__contacts">
+                                <div class="footer__title"><a href="/kontakty">Контакты</a></div>
+                                <div class="footer__contacts-item">
+                                    <a href="/kontakty">
+                                        <div class="footer__contacts-icon">
+                                            <svg class="svg-icon">
+                                                <use xlink:href="#icon-location" />
+                                            </svg>
+                                        </div>
+                                        <div class="footer__contacts-text footer__contacts-text_larger">
+                                            Свердловская обл., г. Берёзовский, ул. Кирова 63, офис 301 </div>
+                                    </a>
+                                </div>
+                                <div class="footer__contacts-item">
+                                    <a href="mailto:ooo.plastek@mail.ru">
+                                        <div class="footer__contacts-icon">
+                                            <svg class="svg-icon">
+                                                <use xlink:href="#icon-mail" />
+                                            </svg>
+                                        </div>
+                                        <div class="footer__contacts-text">
+                                            ooo.plastek@mail.ru </div>
+                                    </a>
+                                </div>
+                                <div class="footer__contacts-item">
+                                    <a href="tel:+73433858140">
+                                        <div class="footer__contacts-icon">
+                                            <svg class="svg-icon">
+                                                <use xlink:href="#icon-phone" />
+                                            </svg>
+                                        </div>
+                                        <div class="footer__contacts-text footer__contacts-text_larger">
+                                            +7 (343) 385-81-40 </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-default" data-toggle="modal"
+                                        data-target="#callbackModal">
+                                        <span>Заказать звонок</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-2">
+                            <div class="footer__logo">
+                                <a href="/"><img src="/images/logo-footer.png" alt="Антарес"></a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-2">
+                            <div class="footer__copyright">
+                                <p>ООО &laquo;Антарес&raquo;</p>
+
+                                <p>&copy; 2022 Все права защищены</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-md-5">
+                            <div class="footer__links">
+                                <a href="/politic">Политика конфиденциальности</a> <a href="/sitemap">Карта сайта</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <div class="footer__poweredby">
+                                <div class="poweredby">
+                                    <a href="https://1pos.ru" title="Создание и продвижение сайта ipos" target="_blank">
+                                        <svg class="svg-icon poweredby__logo">
+                                            <use xlink:href="#ipos-logo" />
+                                        </svg>
+                                    </a>
+                                    <span class="poweredby__text">Digital-агентство <br>полного цикла</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="modal__title">Оставьте заявку</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <svg class="svg-icon">
+                                    <use xlink:href="#icon-close" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="modal__text">
+                            <p>Оставьте свои контактные данные и наш менеджер свяжется с Вами в ближайшее время.</p>
+                        </div>
+                        <div class="modal__form">
+                            <form action="" class='ajax'>
+                                <div class="form-group">
+                                    <label>Как к Вам обращаться?*</label>
+                                    <input type="text" class="form-control" placeholder="Имя" required name='name'>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваша организация*</label>
+                                    <input type="text" class="form-control" placeholder="Название организации" required
+                                        name='org'>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваш телефон*</label>
+                                    <input type="text" class="form-control phone" placeholder="+7 (___) ___ - __ - __ "
+                                        required name='phone'>
+                                </div>
+                                <div class="form-group form-bnt-wrap text-center">
+                                    <button class="btn btn-primary" type='submit'>
+                                        <span>Отправить заявку</span>
+                                    </button>
+                                </div>
+                                <div class="form-agreement text-center">
+                                    <p>
+                                        Нажимая на кнопку «Отправить заявку», <br>Вы даете согласие на
+                                        <a href="/politic" target='_blank'>обработку персональных данных</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="writeUsModal" tabindex="-1" role="dialog" aria-labelledby="writeUsModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="modal__title">Напишите нам</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <svg class="svg-icon">
+                                    <use xlink:href="#icon-close" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="modal__text">
+                            <p>Заполните форму обратной связи и мы бесплатно проконсультируем Вас по любому
+                                интересующему вопросу.</p>
+                        </div>
+                        <div class="modal__form">
+                            <form action="" class='ajax'>
+                                <div class="form-group">
+                                    <label>Как к Вам обращаться?*</label>
+                                    <input type="text" class="form-control" placeholder="Имя" required name='name'>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваша организация*</label>
+                                    <input type="text" class="form-control" placeholder="Название организации" required
+                                        name='org'>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваш телефон*</label>
+                                    <input type="text" class="form-control phone" placeholder="+7 (___) ___ - __ - __ "
+                                        required name='phone'>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваш E-mail</label>
+                                    <input type="text" class="form-control" placeholder="example@mailto.ru"
+                                        name='email'>
+                                </div>
+                                <div class="form-group">
+                                    <label>Ваш город</label>
+                                    <input type="text" class="form-control" placeholder="Название города" name='city'>
+                                </div>
+                                <div class="form-group form-bnt-wrap text-center">
+                                    <button class="btn btn-primary" type='submit'>
+                                        <span>Отправить заявку</span>
+                                    </button>
+                                </div>
+                                <input type='hidden' name='type' value=''>
+                                <input type='hidden' name='item_id' value=''>
+                                <div class="form-agreement text-center">
+                                    <p>
+                                        Нажимая на кнопку «Отправить заявку», <br>Вы даете согласие на
+                                        <a href="/politic" target='_blank'>обработку персональных данных</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3 class="modal__title">Спасибо!</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                <svg class="svg-icon">
+                                    <use xlink:href="#icon-close" />
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="modal__text">
+                            <p><strong>Ваша заявка успешно отправлена.</strong></p>
+                            <p>Менеджер свяжется с Вами в ближайшее время и&nbsp;ответит на все интересующие вопросы.
+                            </p>
+                        </div>
+                        <div class="form-bnt-wrap text-center">
+                            <a href="/" class="btn btn-info">
+                                <span>Перейти на главную</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+            <symbol viewBox="0 0 111 33" id="ipos-logo">
+                <path
+                    d="M16.6362 33.0002C25.8242 33.0002 33.2724 25.6926 33.2724 16.6783C33.2724 7.66399 25.8242 0.356445 16.6362 0.356445C7.44829 0.356445 0 7.66399 0 16.6783C0 25.6926 7.44829 33.0002 16.6362 33.0002Z" />
+                <path
+                    d="M16.6848 8.72604C16.4308 8.73516 16.1776 8.69331 15.9407 8.60306C15.7037 8.5128 15.4881 8.37605 15.3069 8.20117C15.1328 8.03362 14.9955 7.83288 14.9035 7.61131C14.8115 7.38975 14.7667 7.15205 14.7719 6.91285C14.7702 6.67413 14.8166 6.43744 14.9084 6.21636C15.0002 5.99527 15.1356 5.79415 15.3069 5.62454C15.483 5.4409 15.697 5.29625 15.9346 5.20025C16.1722 5.10425 16.428 5.05911 16.6848 5.06786C16.9349 5.05585 17.1845 5.09972 17.4148 5.19615C17.6451 5.29258 17.85 5.43906 18.0142 5.62454C18.3337 5.97986 18.507 6.43907 18.5005 6.91285C18.5135 7.38771 18.3393 7.84917 18.0142 8.20117C17.8448 8.37821 17.6381 8.51688 17.4085 8.60753C17.179 8.69818 16.932 8.73862 16.6848 8.72604ZM18.079 11.1436V27.6532H15.2388V11.1341L18.079 11.1436Z"
+                    fill="#13191E" />
+                <path
+                    d="M42.4326 19.8238V31.8958H38.2598V0.918945H47.4776C51.0636 0.918945 53.8487 1.6474 55.833 3.10431C57.8173 4.56122 58.804 6.81339 58.7932 9.86082C58.8335 11.41 58.5408 12.9502 57.934 14.3811C57.4014 15.5952 56.5757 16.664 55.5282 17.4953C54.435 18.3352 53.1732 18.939 51.8255 19.2671C50.2845 19.6546 48.6987 19.8439 47.108 19.8302L42.4326 19.8238ZM42.4326 4.59622V16.1465H47.108C48.1326 16.1577 49.1546 16.0412 50.1493 15.7998C51.0021 15.5984 51.8048 15.2306 52.5097 14.7183C53.1817 14.2151 53.7127 13.5529 54.053 12.7937C54.4413 11.8885 54.6292 10.9126 54.6042 9.9308C54.6042 8.05612 53.9871 6.69994 52.7528 5.86227C51.5186 5.02459 49.7548 4.60682 47.4614 4.60894L42.4326 4.59622Z" />
+                <path
+                    d="M99.1825 32.3286C98.0296 32.3324 96.8785 32.2377 95.7424 32.0455C94.7304 31.8755 93.7299 31.645 92.7465 31.3552C91.9095 31.112 91.0976 30.7926 90.3213 30.4009C89.7139 30.1032 89.1373 29.7484 88.5996 29.3416L89.2481 25.448C89.7821 25.8552 90.3505 26.217 90.947 26.5296C92.541 27.3854 94.2586 27.9979 96.0407 28.346C97.0698 28.5568 98.1182 28.6634 99.1695 28.6641C101.463 28.6641 103.293 28.2399 104.659 27.3916C106.025 26.5434 106.709 25.2529 106.711 23.5203C106.74 22.7775 106.572 22.04 106.225 21.3795C105.881 20.7974 105.396 20.307 104.814 19.9512C104.092 19.5175 103.314 19.1825 102.499 18.9556C101.572 18.682 100.491 18.3872 99.257 18.0712C98.0228 17.7552 96.7886 17.3947 95.5543 16.9897C94.3738 16.6155 93.2528 16.0801 92.2245 15.3992C91.2506 14.7482 90.4375 13.8917 89.8446 12.8925C89.2416 11.8809 88.94 10.5969 88.94 9.04028C88.94 6.3873 89.8803 4.30373 91.7608 2.78956C93.6414 1.27539 96.4935 0.518301 100.317 0.518301C101.394 0.5099 102.47 0.574736 103.537 0.712344C104.374 0.810188 105.205 0.958921 106.024 1.15769C106.656 1.32377 107.275 1.53644 107.875 1.79389C108.407 2.02611 108.848 2.24242 109.243 2.4301L108.708 6.36185C107.576 5.65677 106.344 5.12074 105.051 4.77134C103.515 4.35304 101.927 4.14956 100.333 4.16694C99.1857 4.14437 98.0391 4.2511 96.9161 4.48505C96.1162 4.64982 95.3558 4.96293 94.6757 5.40754C94.1328 5.77678 93.7052 6.28666 93.4404 6.88036C93.1773 7.49989 93.046 8.16561 93.0545 8.83669C93.0255 9.59992 93.2324 10.3539 93.6479 10.9998C94.0624 11.5911 94.6049 12.0853 95.2366 12.4472C95.9499 12.8611 96.7121 13.188 97.5062 13.4206C98.3578 13.6814 99.2549 13.9126 100.197 14.114C101.434 14.4321 102.698 14.7714 103.991 15.132C105.224 15.4667 106.398 15.9837 107.473 16.6652C108.501 17.3302 109.367 18.2101 110.008 19.2418C110.67 20.3022 111.001 21.6647 111.001 23.3295C111.063 24.6977 110.763 26.0585 110.129 27.279C109.496 28.4994 108.55 29.5378 107.385 30.2927C106.239 31.0386 104.96 31.5673 103.615 31.8514C102.16 32.1727 100.673 32.3328 99.1825 32.3286Z" />
+                <path
+                    d="M85.8336 19.1656C85.8787 21.2539 85.5798 23.3357 84.9485 25.3305C84.447 26.8965 83.6026 28.3362 82.4746 29.5485C81.427 30.6356 80.1329 31.4649 78.6973 31.9693C75.5904 33.0083 72.2201 33.0083 69.1131 31.9693C67.6772 31.4657 66.3829 30.6362 65.3358 29.5485C64.205 28.3344 63.3536 26.8958 62.8393 25.3305C62.1919 23.3387 61.8841 21.2558 61.9282 19.1656V13.5829C61.883 11.493 62.1898 9.41004 62.836 7.4181C63.3504 5.85274 64.2018 4.41421 65.3326 3.20005C66.3796 2.11235 67.6739 1.28288 69.1099 0.779286C72.2168 -0.259762 75.5871 -0.259762 78.6941 0.779286C80.1297 1.28364 81.4238 2.113 82.4714 3.20005C83.6006 4.41211 84.446 5.85174 84.9485 7.4181C85.5798 9.41291 85.8787 11.4946 85.8336 13.5829V19.1656ZM81.7321 13.5829C81.7635 12.0227 81.5781 10.4656 81.1809 8.95453C80.8845 7.82242 80.3536 6.76232 79.6214 5.8403C78.9732 5.05173 78.1227 4.44674 77.1572 4.08756C75.0504 3.36657 72.7568 3.36657 70.65 4.08756C69.681 4.45033 68.8251 5.0544 68.1664 5.8403C67.4204 6.75692 66.8811 7.81836 66.5841 8.95453C66.187 10.4656 66.0015 12.0227 66.0329 13.5829V19.1656C66.0015 20.7258 66.187 22.283 66.5841 23.794C66.8805 24.9262 67.4114 25.9862 68.1437 26.9083C68.7955 27.7013 69.6536 28.3069 70.6273 28.661C71.678 29.0326 72.7884 29.2157 73.9052 29.2018C75.0104 29.2157 76.1091 29.0325 77.1475 28.661C78.1136 28.3031 78.9645 27.6979 79.6117 26.9083C80.3439 25.9862 80.8748 24.9262 81.1712 23.794C81.5684 22.283 81.7538 20.7258 81.7224 19.1656L81.7321 13.5829Z" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="icon-location">
+                <path
+                    d="M11.9251 0C7.52988 0 3.9751 3.756 3.9751 8.4C3.9751 14.7 11.9251 24 11.9251 24C11.9251 24 19.8751 14.7 19.8751 8.4C19.8751 3.756 16.3203 0 11.9251 0ZM11.9251 11.4C10.3578 11.4 9.08581 10.056 9.08581 8.4C9.08581 6.744 10.3578 5.4 11.9251 5.4C13.4924 5.4 14.7644 6.744 14.7644 8.4C14.7644 10.056 13.4924 11.4 11.9251 11.4Z" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="icon-mail">
+                <path
+                    d="M20.8 3H3.2C1.99 3 1.011 4.0125 1.011 5.25L1 18.75C1 19.9875 1.99 21 3.2 21H20.8C22.01 21 23 19.9875 23 18.75V5.25C23 4.0125 22.01 3 20.8 3ZM20.8 7.5L12 13.125L3.2 7.5V5.25L12 10.875L20.8 5.25V7.5Z" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" id="icon-phone">
+                <path
+                    d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" />
+            </symbol>
+            <symbol viewBox="0 0 16 16" id="icon-caret-right">
+                <path d="M5.72656 11.06L8.7799 8L5.72656 4.94L6.66656 4L10.6666 8L6.66656 12L5.72656 11.06Z" />
+            </symbol>
+            <symbol viewBox="0 0 18 18" fill="none" id="icon-wa">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.0613 10.7865C12.8378 10.6747 11.742 10.1362 11.538 10.0612C11.334 9.98699 11.1855 9.95024 11.0363 10.1737C10.8877 10.3957 10.461 10.8982 10.3312 11.0467C10.2007 11.196 10.071 11.214 9.84825 11.103C9.6255 10.9905 8.907 10.7557 8.05575 9.99674C7.3935 9.40574 6.94575 8.67599 6.816 8.45249C6.68625 8.22974 6.80175 8.10899 6.9135 7.99799C7.014 7.89824 7.13625 7.73774 7.248 7.60799C7.35975 7.47749 7.3965 7.38449 7.47075 7.23524C7.54575 7.08674 7.50825 6.95699 7.452 6.84524C7.3965 6.73349 6.951 5.63624 6.765 5.18999C6.58425 4.75574 6.4005 4.81499 6.264 4.80749C6.1335 4.80149 5.985 4.79999 5.8365 4.79999C5.688 4.79999 5.4465 4.85549 5.2425 5.07899C5.03775 5.30174 4.4625 5.84099 4.4625 6.93824C4.4625 8.03474 5.2605 9.09449 5.37225 9.24374C5.484 9.39224 6.9435 11.6437 9.17925 12.609C9.71175 12.8385 10.1265 12.9757 10.4497 13.0777C10.9837 13.248 11.4698 13.224 11.8538 13.1662C12.2812 13.1025 13.1723 12.627 13.3583 12.1065C13.5435 11.586 13.5435 11.1397 13.488 11.0467C13.4325 10.9537 13.284 10.8982 13.0605 10.7865H13.0613ZM8.99475 16.3387H8.99175C7.66382 16.339 6.36028 15.982 5.21775 15.3052L4.94775 15.1447L2.14125 15.8812L2.8905 13.1452L2.71425 12.8647C1.97185 11.683 1.57897 10.3153 1.581 8.91974C1.5825 4.83224 4.908 1.50674 8.99775 1.50674C10.9777 1.50674 12.8393 2.27924 14.2388 3.68024C14.929 4.36768 15.4762 5.18516 15.8485 6.08541C16.2208 6.98566 16.4109 7.9508 16.4078 8.92499C16.4062 13.0125 13.0807 16.3387 8.99475 16.3387ZM15.3038 2.61599C14.4774 1.78418 13.4942 1.12464 12.4111 0.675589C11.328 0.226537 10.1665 -0.00309915 8.994 -1.12285e-05C4.0785 -1.12285e-05 0.0765 4.00124 0.075 8.91899C0.0727223 10.4841 0.483281 12.022 1.26525 13.3777L0 18L4.728 16.7595C6.03591 17.4721 7.50157 17.8455 8.991 17.8455H8.99475C13.9102 17.8455 17.9123 13.8442 17.9137 8.92574C17.9174 7.7537 17.6886 6.59257 17.2406 5.50951C16.7926 4.42646 16.1343 3.44299 15.3038 2.61599Z"
+                    fill="currentColor" />
+            </symbol>
+            <symbol viewBox="0 0 18 18" fill="none" id="icon-wa-colored">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.0613 10.7865C12.8378 10.6747 11.742 10.1362 11.538 10.0612C11.334 9.98699 11.1855 9.95024 11.0363 10.1737C10.8877 10.3957 10.461 10.8982 10.3312 11.0467C10.2007 11.196 10.071 11.214 9.84825 11.103C9.6255 10.9905 8.907 10.7557 8.05575 9.99674C7.3935 9.40574 6.94575 8.67599 6.816 8.45249C6.68625 8.22974 6.80175 8.10899 6.9135 7.99799C7.014 7.89824 7.13625 7.73774 7.248 7.60799C7.35975 7.47749 7.3965 7.38449 7.47075 7.23524C7.54575 7.08674 7.50825 6.95699 7.452 6.84524C7.3965 6.73349 6.951 5.63624 6.765 5.18999C6.58425 4.75574 6.4005 4.81499 6.264 4.80749C6.1335 4.80149 5.985 4.79999 5.8365 4.79999C5.688 4.79999 5.4465 4.85549 5.2425 5.07899C5.03775 5.30174 4.4625 5.84099 4.4625 6.93824C4.4625 8.03474 5.2605 9.09449 5.37225 9.24374C5.484 9.39224 6.9435 11.6437 9.17925 12.609C9.71175 12.8385 10.1265 12.9757 10.4497 13.0777C10.9837 13.248 11.4698 13.224 11.8538 13.1662C12.2812 13.1025 13.1723 12.627 13.3583 12.1065C13.5435 11.586 13.5435 11.1397 13.488 11.0467C13.4325 10.9537 13.284 10.8982 13.0605 10.7865H13.0613ZM8.99475 16.3387H8.99175C7.66382 16.339 6.36028 15.982 5.21775 15.3052L4.94775 15.1447L2.14125 15.8812L2.8905 13.1452L2.71425 12.8647C1.97185 11.683 1.57897 10.3153 1.581 8.91974C1.5825 4.83224 4.908 1.50674 8.99775 1.50674C10.9777 1.50674 12.8393 2.27924 14.2388 3.68024C14.929 4.36768 15.4762 5.18516 15.8485 6.08541C16.2208 6.98566 16.4109 7.9508 16.4078 8.92499C16.4062 13.0125 13.0807 16.3387 8.99475 16.3387ZM15.3038 2.61599C14.4774 1.78418 13.4942 1.12464 12.4111 0.675589C11.328 0.226537 10.1665 -0.00309915 8.994 -1.12285e-05C4.0785 -1.12285e-05 0.0765 4.00124 0.075 8.91899C0.0727223 10.4841 0.483281 12.022 1.26525 13.3777L0 18L4.728 16.7595C6.03591 17.4721 7.50157 17.8455 8.991 17.8455H8.99475C13.9102 17.8455 17.9123 13.8442 17.9137 8.92574C17.9174 7.7537 17.6886 6.59257 17.2406 5.50951C16.7926 4.42646 16.1343 3.44299 15.3038 2.61599Z"
+                    fill="#25D366" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" fill="none" id="icon-close">
+                <path
+                    d="M0.765311 0.765956C1.18833 0.34293 1.87417 0.342931 2.29719 0.765957L23.2329 21.7021C23.6559 22.1252 23.6559 22.811 23.2329 23.234C22.8099 23.6571 22.124 23.6571 21.701 23.234L0.765313 2.29787C0.342297 1.87484 0.342295 1.18898 0.765311 0.765956Z"
+                    fill="currentColor" />
+                <path
+                    d="M23.2327 0.765956C22.8097 0.34293 22.1239 0.342931 21.7009 0.765957L0.765179 21.7021C0.342162 22.1252 0.342162 22.811 0.765178 23.234C1.18819 23.6571 1.87404 23.6571 2.29706 23.234L23.2327 2.29787C23.6558 1.87484 23.6558 1.18898 23.2327 0.765956Z"
+                    fill="currentColor" />
+            </symbol>
+            <symbol viewBox="0 0 24 24" fill="none" id="icon-clock">
+                <path
+                    d="M11.5 22C17.299 22 22 17.299 22 11.5C22 5.70101 17.299 1 11.5 1C5.70101 1 1 5.70101 1 11.5C1 17.299 5.70101 22 11.5 22Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M11.5 5.5V11.5L14.5 14.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </symbol>
+            <symbol viewBox="0 0 17 17" fill="none" id="slick-prev">
+                <line x1="1" y1="-1" x2="11" y2="-1"
+                    transform="matrix(-0.707107 0.707107 0.707107 0.707107 12.4141 1.41406)" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" />
+                <line x1="1" y1="-1" x2="11" y2="-1"
+                    transform="matrix(0.707107 0.707107 0.707107 -0.707107 3.92969 7.07031)" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" />
+            </symbol>
+            <symbol viewBox="0 0 17 17" fill="none" id="slick-next">
+                <line x1="6.00015" y1="1.41406" x2="13.0712" y2="8.48513" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+                <line x1="13.0703" y1="8.48453" x2="5.99924" y2="15.5556" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" />
+            </symbol>
+            <symbol viewBox="0 0 20 20" fill="none" id="icon-filter">
+                <path d="M15.2791 5H4.16797L8.61241 10.2556V13.8889L10.8346 15V10.2556L15.2791 5Z" stroke="currentColor"
+                    stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+            </symbol>
+            <symbol viewBox="0 0 16 16" fill="none" id="icon-caret-up">
+                <path d="M11.06 10.2734L8 7.2201L4.94 10.2734L4 9.33344L8 5.33344L12 9.33344L11.06 10.2734Z"
+                    fill="currentColor" />
+            </symbol>
+            <symbol viewBox="0 0 16 16" fill="none" id="icon-caret-down">
+                <path d="M4.94 5.72656L8 8.7799L11.06 5.72656L12 6.66656L8 10.6666L4 6.66656L4.94 5.72656Z"
+                    fill="currentColor" />
+            </symbol>
+            <symbol viewBox="0 0 28 28" fill="none" id="icon-search">
+                <path
+                    d="M18.0833 16.3333H17.1617L16.835 16.0183C17.9783 14.6883 18.6667 12.9617 18.6667 11.0833C18.6667 6.895 15.2717 3.5 11.0833 3.5C6.895 3.5 3.5 6.895 3.5 11.0833C3.5 15.2717 6.895 18.6667 11.0833 18.6667C12.9617 18.6667 14.6883 17.9783 16.0183 16.835L16.3333 17.1617V18.0833L22.1667 23.905L23.905 22.1667L18.0833 16.3333ZM11.0833 16.3333C8.17833 16.3333 5.83333 13.9883 5.83333 11.0833C5.83333 8.17833 8.17833 5.83333 11.0833 5.83333C13.9883 5.83333 16.3333 8.17833 16.3333 11.0833C16.3333 13.9883 13.9883 16.3333 11.0833 16.3333Z"
+                    fill="currentColor" />
+            </symbol>
+            <symbol viewBox="0 0 10 5" fill="none" id="icon-caret-menu">
+                <path d="M5 5L9.33013 0.5H0.669873L5 5Z" fill="currentColor" />
+            </symbol>
+        </svg>
+        <script src="/js/jquery-3.2.1.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.fancybox.min.js"></script>
+        <script src="/js/jquery.maskedinput.min.js"></script>
+        <script src="/js/wow.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="/js/functions.js?v=1686027348"></script>
+        <script src="/js/update.js"></script>
+        <script src="/js/test_update.js"></script>
+
+    </div>
+</body>
+
+</html>
